@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project - Fluid Form</title>
+  <link rel="stylesheet" href="styles.css">
+  <div class="container">
+    <h1 class="title2">Click Image to Reveal</h1>
+    <!-- <p class="subtitle">Details about "Athletic Arts" will go here.</p> -->
+  <script>
+    // JavaScript to hide images and show corresponding GIF
+    function hideImage(event, gifId) {
+      // Hide the image
+      event.target.style.display = 'none';
+      // Show the corresponding GIF
+      document.getElementById(gifId).style.display = 'block';
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <!-- Image slots section -->
+    <div class="image-slots">
+      <div class="image-container">
+        <img src="/images/zidane.JPG" alt="Athletic Art 1" class="image-slot" onclick="hideImage(event, 'gif1')">
+        <img id="gif1" src="/gifs/zidane.gif" alt="Athletic Art GIF 1" class="gif" style="display: none;">
+      </div>
+      <div class="image-container">
+        <img src="/images/ronaldo.JPG" alt="Athletic Art 2" class="image-slot" onclick="hideImage(event, 'gif2')">
+        <img id="gif2" src="/gifs/cris.gif" alt="Athletic Art GIF 2" class="gif" style="display: none;">
+      </div>
+      <div class="image-container">
+        <img src="/images/haaland.JPG" alt="Athletic Art 3" class="image-slot" onclick="hideImage(event, 'gif3')">
+        <img id="gif3" src="/gifs/haaland.gif" alt="Athletic Art GIF 3" class="gif" style="display: none;">
+      </div>
+      <!-- Row 2 -->
+<div class="image-container">
+    <img src="/images/rvp.JPG" alt="Athletic Art 4" class="image-slot" onclick="hideImage(event, 'gif4')">
+    <img id="gif4" src="/gifs/rvp.gif" alt="Athletic Art GIF 4" class="gif" style="display: none;">
+  </div>
+  <div class="image-container">
+    <img src="/images/zlatan.JPG" alt="Athletic Art 5" class="image-slot" onclick="hideImage(event, 'gif5')">
+    <img id="gif5" src="/gifs/zlatan.gif" alt="Athletic Art GIF 5" class="gif" style="display: none;">
+  </div>
+  <div class="image-container">
+    <img src="/images/giroud.JPG" alt="Athletic Art 6" class="image-slot" onclick="hideImage(event, 'gif6')">
+    <img id="gif6" src="/gifs/giroud.gif" alt="Athletic Art GIF 6" class="gif" style="display: none;">
+  </div>
+  
+      
+    </div>
+
+    <a href="index.html" class="bottom-button">Home</a>
+  </div>
+  
+</body>
+</html>
